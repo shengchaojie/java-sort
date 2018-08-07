@@ -31,6 +31,9 @@ public class BubbleSort extends AbstractSort {
         source = new int[]{10, 8, 7, 5, 4, 20, 7, 5};
         bubbleSort.sort(source);
         bubbleSort.output(source);
+        source = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
+        bubbleSort.sort(source);
+        bubbleSort.output(source);
     }
 
 }

@@ -14,13 +14,13 @@ public class InsertSort extends AbstractSort {
     public void sort(int[] source) {
         int length = source.length;
         for (int i = 0; i < length; i++) {
-            int target = -1;
+            int target = i;
             for (int j = i; j>0; j--) {
                 if(source[i]<source[j-1]){
                     target =j -1;
                 }
             }
-            if(target!=-1){
+            if(target!=i){
                 int temp = source[i];
                 for(int k = i;k>target;k--){
                     source[k] =source[k-1];
@@ -36,6 +36,9 @@ public class InsertSort extends AbstractSort {
         insertSort.sort(source);
         insertSort.output(source);
         source = new int[]{10, 8, 7, 5, 4, 20, 7, 5};
+        insertSort.sort(source);
+        insertSort.output(source);
+        source = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
         insertSort.sort(source);
         insertSort.output(source);
     }

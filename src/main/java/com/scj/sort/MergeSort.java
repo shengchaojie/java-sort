@@ -2,6 +2,7 @@ package com.scj.sort;
 
 /**
  * 归并排序
+ * o(nlog(n))
  * @author 10064749
  * @description ${DESCRIPTION}
  * @create 2018-08-07 13:56
